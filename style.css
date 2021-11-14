@@ -6,6 +6,9 @@
     font-family: 'Poppins', sans-serif;
     /* scroll-behavior: smooth; */
 }
+:root{
+    --color: #03a9f4
+}
 .container
 {
     width: 100%;
@@ -48,10 +51,13 @@ nav ul li a
     text-decoration: none;
     color: #000;
     font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 nav ul li a:hover
 {
-    color: #ff5ea2;
+    color: var(--color);
 }
 
 .row
@@ -96,7 +102,9 @@ button
     padding: 12px 10px;
     outline: none;
     color: #fff;
-    background: linear-gradient(to right, #a75aef, #7d09a3);
+    font-weight: 500;
+    /* background: linear-gradient(to right, #a75aef, #7d09a3); */
+    background: var(--color);
     border-radius: 6px;
     cursor: pointer;
 }
@@ -106,7 +114,8 @@ button
     position: absolute;
     width: 10px;
     height: 57%;
-    background: linear-gradient(#a75aef, #7d09a3);
+    /* background: linear-gradient(#a75aef, #7d09a3); */
+    background: var(--color);
     left: -40px;
     top: 8px;
 }
@@ -127,7 +136,8 @@ button
     position: absolute;
     right: 0;
     top: 0;
-    background: linear-gradient(#a75aef, #7d09a3);
+    /* background: linear-gradient(#a75aef, #7d09a3); */
+    background: var(--color);
     border-radius: 20px 0 0 20px;
     height: 100%;
     width: 80%;
@@ -151,7 +161,8 @@ button
     margin: 10px;
     padding: 10px;
     cursor: pointer;
-    background:  linear-gradient(#a75aef, #7d09a3);
+    /* background:  linear-gradient(#a75aef, #7d09a3); */
+    background:  var(--color);
     border-radius: 5px;
     color: #fff;
 }
@@ -300,7 +311,8 @@ button
     transform: translateX(0);
 }
 .action li:hover{
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
+    background-color: var(--color);
     color: #fff;
 } 
 .action li span{
@@ -352,7 +364,7 @@ button
 
 .container2 .card .content .price-rating h2 {
     font-size: 20px;
-    color: purple;
+    color: #444;
     font-weight: 300;
 }
 
